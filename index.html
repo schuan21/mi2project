@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Love Will Have its Sacrifices</title>
+    <link rel="stylesheet" type="text/css" href="https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/css/loveinthetimeofcovid.css">
+    <link rel="stylesheet" type="text/css" href="https://mediainnovation.camd.northeastern.edu/2021/masters/css/masters.css">
+    <link rel="stylesheet" type="text/css" href="css/masters.css">
+    <script type="text/javascript" src="quiz.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    
+ <!---------------------------- Hamburger menu –––––––––––––––––––––––––––––––––––– -->
+    <nav role="navigation" class="essential-nav">
+    <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox"/>
+        <!--
+        Some spans to act as a hamburger.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/masters/campbell/index.html"><li>Anna Campbell</li></a>
+            
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/masters/chuan/index.html"><li>Sam Chuan</li></a>
+            
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/masters/corbin/index.html"><li>Ryan Corbin</li></a>
+            
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/masters/kauffman/index.html"><li>Brennan Kauffman</li></a>
+            
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/masters/perez/index.html"><li>Sofia Perez Arias</li></a>
+            
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/masters/schumacher/index.html"><li>Yuriko Schumacher</li></a>
+            
+        <a href="https://mediainnovation.camd.northeastern.edu/2021/masters/wolfinger/index.html"><li>Matt Wolfinger</li></a>
+            
+        
+
+        </ul>
+    </div>
+        
+    </nav>
+    
+<!-- ---------YOUR STORY STARTS HERE ------- -->   
+    
+<!-- <img src="https://images.pexels.com/photos/40784/drops-of-water-water-nature-liquid-40784.jpeg?cs=srgb&dl=pexels-pixabay-40784.jpg&fm=jpg">-->   
+    
+
+<div class="header">
+    <h1>Love Will Have its Sacrifices:</h1>
+    <h2>Gendered Differences in Breakup Songs</h2>
+    <h3>By Sam Chuan</h3>
+    <audio controls autoplay>
+        <source src="lovewillbecruel.mp3" type="audio/mpeg">
+      </audio>
+</div>
+
+<div id="quizContainer">
+    <div id="title">
+        <h1>Male or Female</h1>
+    </div>
+    <br />
+    <div id="quiz"></div>
+    <div class="button" id="next"><a href="#">Next</a></div>
+    <div class="button" id="prev"><a href="#">Prev</a></div>
+    <div class="button" id="start"><a href="#">Start Over</a></div>
+</div>
+<script
+    type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+></script>
+<script type="text/javascript" src="Quiz4.js"></script>
+<div class="container">
+
+<p>How easy was it to guess the gender of the singer? As you can guess from the lyrics you may find it easy to guess the gender identity of the singer, highlighting how gendered lyrics are in pop songs especially break up songs.</p>
+
+    <h2>Introduction and Background</h2>
+    <p>The music industry has a unique relationship with gender, and gender representation in the industry. In the US music industry, the number of <a href= "https://news.usc.edu/135288/in-music-industry-female-songwriters-and-producesr-are-outnumbered-by-men/" > men </a> outnumbers the number of women, especially in roles of power such as songwriters and producers. According to a recent <a href ="https://www.rollingstone.com/pro/news/women-artists-music-study-2021-1138094/">2021 USC diversity report</a> in the music industry, about 21 percent of artists are women, about 12 percent are songwriters and about 2 percent are producers. </p>
+    
+    <p>The imbalance in gender and power in music influences all aspects of the industry, down to the songs that are performed by artists and written for artists. Gender and love had played an important role in music and for many to express themselves, especially after a breakup or splitting from their partner. Many song lyrics have gendered themes that are often based on <a href ="https://www.frontiersin.org/articles/10.3389/fpsyg.2016.00411/full">gender stereotypes</a> and focused on  <a href ="https://www.diva-portal.org/smash/get/diva2:1481063/FULLTEXT01.pdf">gendered roles</a>, leading to music having gendered language.</p>
+
+    <p>The data used for this piece comes from scraping data from the Billboard Top 100 charts, Billboard End of the Year Charts, and various lyric sites. The songs that were picked to create the corpus and to analyze all share the same theme of a breakup, to count as a breakup song the lyrics had to explicitly talk about an ex or heavily imply the song is about an ex romantic relationship. To analyze the data and lyrics I had used a mixture of manual data analysis and using tools such as <a href= "https://www.rstudio.com">R</a>, <a href ="https://www.laurenceanthony.net/software/antconc/">AntConc</a>, and <a href ="https://voyant-tools.org/">Vovant Tools</a>.</p>
+    
+    <h2>Pronoun Count Breakdown</h2>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/7699438"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        <figcaption>This is the pronoun count of about 100 breakup songs from the Billboard Top 100 charts. Songs picked included from various male artists, female artists and non-binary artists and those who also 'they/them' pronouns in addition to using 'he/him' or 'she/her' pronouns.</figcaption>
+
+        <p>Based on the sample of break up songs, regradless of gender artists tend to use about the same amount of 'I' and 'You' pronouns in songs. However, songs by female identiting artists uses slightly more 'our' and 'us' pronouns. </p>
+<h2>Analysis Music Themes and Lyrics</h2>
+        <p>Many of the songs that were discussing love and breakups follow similar themes and contents in the lyrics. Overall the song's themes, regardless of gender, focus on the major themes of anger and emotions as well as negative feelings towards their exes.</p>
+
+           <p> Regardless of the gender identity of the singer, a similarity between male and female singers is that the structures of the songs tend to focus on three main aspects of the breakup and relationship. The first aspect is the singers themselves, the second is what the ex, and lastly the relationship.</p>
+            
+            <p>Lines of themselves include the singer's feelings or actions that they have done or felt because of the breakup. While lines about their exes focus on what the ex has done since the breakup or how they might be feeling. Lastly, the lines about the effects of the relationship usually focus on things on how the relationship made the singer feel or that it made a worse or better person.
+            </p>
+            <div class="flourish-embed flourish-table" data-src="visualisation/7701371"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+            <div class="flourish-embed flourish-table" data-src="visualisation/7701866"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+<p>However, even with similar structures in music the lyrics themselves are usually <a href = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4815278/">heavily gendered</a>. Many pop songs' lyrics fall victim to troops and gendered stereotypes, especially when talking about love and exes. </p>
+<div class="photogrid">
+    <img src="malepronouns.png">
+    <img src="male pronounyou.png">
+    <img src="MalePronoun1.png">
+</div>
+<p>The lyrics in the male artist songs tend to be more anger-focused and often follow an action due to the relationship.</p>
+
+<div class="photogrid">
+    <img src="Female Pronouns.png">
+    <img src="FemalePronounYou.png">
+    <img src="FemalePronouns I.png">
+    </div>
+<p>The lyrics in the female artist's songs tend to be more focused on themselves and how they're feeling. As well as many songs focus on the artist thinking or watching the impacts of the relationship and break up.</p>
+
+<div class="photogrid">
+    <img src="neutral.png">
+    <img src="nyou.png">
+    <img src="n!.png">
+    </div>
+<div class="photogrid"></div>
+
+<p>Songs with neutral lyrics tend to be less explicit with the major themes and were in the middle of the spectrum of breakup songs. </p>
+
+
+<h2>Pronouns & Themes</h2>
+<div class="flourish-embed flourish-survey" data-src="visualisation/7722977"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<p>Male singers tend to focus on what they are going to do after the breakup, like go party, go drink or do drugs, or even have sex or sleep around. While they tend to be angry towards their ex and call them names and blame them for the breakup. </p>
+
+
+<div class = songs>
+    <video controls poster='dont.png'>
+        <source src='dont.mp3' type= 'audio/mp3'>
+    </video>
+    <video controls poster='HOTGIRL.png'>
+        <source src='hotgirlbummer.mp3' type= 'audio/mp3'>
+    </video>
+<figcaption>Don't by Ed Sheeran</figcaption> 
+<figcaption>Hot Girl Bummer by Blackbear</figcaption>
+</div>
+
+<p>Female artists tend to focus mostly on their emotions, and thinking about the relationship, and then focusing on themselves after the event.</p>
+<div class = songs>
+    <video controls poster='Lose.png'>
+        <source src="lossyou.mp3" type= 'audio/mp3'>
+    </video>
+    <video controls poster='NewRules.png'>
+        <source src="newrules.mp3" type= 'audio/mp3'>
+    </video>
+    <figcaption>Lose You to Love Me by Selena Gomez</figcaption> <figcaption>New Rules by Dua Lipa</figcaption>
+    </div>
+
+<p>However, there are still overlapping themes of emotions caused by the breakup and what happened afterward. As well not all songs were as explicit with these themes and there were songs that were in the middle of the spectrum. The main themes were things like anger and regret and the aftermaths of the breakup, the main difference was what language was used and how the artists talk about the breakup or their ex. For example, how artists would describe and talk about their ex and how they felt because of the breakup, as well as how they described their actions after the breakup.  (Did they party after the breakup or did they talk about it with friends?)</p>
+
+<div class = songs>
+    <video controls poster='Apologize.PNG'>
+        <source src="apologize.mp3" type= 'audio/mp3'>
+    </video>
+    <video controls poster='TSwift.png'>
+        <source src="wearenever.mp3" type= 'audio/mp3'>
+    </video>
+    <figcaption>Apologize by One Republic</figcaption> <figcaption>We Are Never Ever Getting Back Together by Taylor Swift</figcaption>
+    </div>
+
+    <h2>Gender Breakdown in the Music Industry</h2>
+    <h4>Top Billboard 100 Artists</h4>
+    <div class="flourish-embed flourish-chart" data-src="visualisation/7706827"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+    <figcaption>The past month the top 10 artists were majority male-identifying singers, the past month there were usually less than 5 female-identifying artists charting the Billboard 100's.</figcaption>
+    
+    <h2>Gender in Music </h2>
+    <p>Gender in music has been a topic that has been an issue throughout time, with more and more artists speaking out on the inequalities they faced in the industry. This issue creates an unhealthy culture for those in the industry and allows for sexism to thrive. There are more men in the music industry compared to women, leading to an imbalance of representation in the industry. </p>
+    
+    <p>The lack of representation in the industry creates the issue of how  <a href="https://psycnet.apa.org/record/2017-55387-001">songs</a> are written and what goes on behind the scenes. The imbalance of gender leads to songs having <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4815278/"> gendered themes</a> and stereotypes that influence the meaning of the song.</p>
+    
+    <p>Regardless of the artist's gender identity, the majority of their <a href ="https://assets.uscannenberg.org/docs/aii-inclusion-recording-studio-20200117.pdf">songwriters and producers</a> are men, often many of these teams are made of all men or a small handful of women. However, even with a majority of the songwriters and producers being males, there are differences in how songs are written depending on the artist that was singing the song. </p>
+    <h2>Methodology </h2>
+<p>To analyze gender pronouns and themes in the songs, lyric data was collected online and then entered into AntConc and Voyent Tools, allowing for lyrical analysis such as word combinations and collecting usage of pronouns. While R was used to create the data visualizations of the pronouns, I used Julia Silge's R code <a href= "https://juliasilge.com/blog/gender-pronouns/"> Gender Roles with Text Mining and N-grams</a> to help create visualizations. In addition, to the R code <a href="https://flourish.studio/"> Flourish</a> was used to make some other graphics. </p>
+
+<p>Artists', songwriters', and producers' gender identities were collected from their Wikipedia page and online articles and news sources. Song data come from lyric sites such as <a href="https://genius.com/">Genius</a> and <a href="https://www.azlyrics.com/"> AZLyrics</a>, and songs that were chosen came from the <a href ="https://www.billboard.com/charts/hot-100">Billboard 100's charts</a>. The songs that were picked had lyrics and themes that had some sort of references to a past relationship or an ex. </p>
+
+<h2>Playlist!</h2>
+<iframe src="https://open.spotify.com/embed/playlist/73379W2ynkiWc9wINXqieH?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+<p style="text-align: center; padding:30px 0; margin-top: 50px; font-family:'Helvetica';border-top:1px solid black">Produced by students of the Media Innovation masters' program at the <a href="https://camd.northeastern.edu/journalism-at-northeastern/" style="text-decoration: underline" >Northeastern University School of Journalism.</a> &#169; 2021</p>
+
+<h5 style="border-top: none; margin-top: -2%; text-align: center"><img src="https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/images/seal_logotype-768x252.png" width="300px"></h5>
+
+</body>
+
+</html>
