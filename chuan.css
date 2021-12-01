@@ -1,0 +1,245 @@
+/* ----------------------  LOAD FONTS FROM SERVER ------------------------------ */
+
+@font-face {
+    font-family: "GrotzecCond-Demibold";
+     src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-Demibold3.woff2);
+   }  
+   
+   @font-face {
+    font-family: "GrotzecCond-DemiboldItalic";
+     src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/GrotzecCond-DemiboldItalic.woff2);
+   }  
+   
+   @font-face {
+    font-family: "LeJeunePoster-Regular";
+     src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-Regular.otf);
+   } 
+   
+   @font-face {
+    font-family: "LeJeunePoster-RegularItalic";
+     src: url(https://mediainnovation.camd.northeastern.edu/2021/loveinthetimeofcovid/fonts/LeJeunePoster-RegularItalic.otf);
+   }
+   
+   /* ----------------------  BASIC CSS FOR MY STORY ------------------------------ */
+   
+   #menuToggle {
+     max-width: 100px;
+   }
+   
+   html,body {
+       margin: 0;
+       padding: 0;
+   }
+   
+   * {
+       box-sizing: border-box;
+   }
+   
+   .container {
+     max-width:  800px;
+   }
+   
+   @media (max-width:550px){
+       .container {
+           width: 90%;
+           margin: 0 auto;
+       }
+   }
+   
+   @media (min-width:551px) {
+       .container {
+           width: 80%;
+           margin: 0 auto;
+       }
+   }
+   
+   @media (min-width:960px){
+       .container {
+           width: 65%;
+           margin: 0 auto;
+       }
+   }
+   
+   .header {
+     text-align: center;
+     font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+       font-weight:300;
+   }
+   
+   .header h1{
+     text-align: center;
+     font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+     font-size: 5em;
+     line-height: 85%;
+       letter-spacing: -1px;
+   }
+   
+   .header h2 {
+         font-family: "Georgia-Italic", serif;
+     font-size: 2em;
+     line-height: 85%;
+       text-align: center;
+       font-weight: 100;
+   }
+   
+   
+   .header h3{
+     font-size: 1.3em;
+     text-transform:uppercase;
+     letter-spacing: 2px;
+     text-align: center;
+   }
+   
+   @media (max-width:550px) {
+       .container p{
+       font-family:"Georgia", serif;
+       color: black;
+       font-size: 1.2em;
+       line-height: 1.7em;
+       }
+   }
+   
+   @media (min-width:551px) {
+       .container p{
+       font-family:"Georgia", serif;
+       color: black;
+       font-size: 1.3em;
+       line-height: 2.3;
+       }
+   }
+   
+   img{
+     width: 100%;
+   }
+   
+   figure.mifigure {
+       margin:0;
+   }
+   
+   .mifigure figcaption {
+       font-family:"Georgia", serif;
+     color: #666;
+     font-size: 1.2em;
+     line-height: 1.6em;
+       padding-top: 10px;
+   }
+   
+   @media (max-width:1023px){
+       .photogrid {
+       display: grid;
+       grid-template-columns: auto ;
+       grid-column-gap: 30px;
+   }
+   }
+   
+   @media (min-width:1024px){
+       .photogrid {
+       display: grid;
+       grid-template-columns: auto auto;
+       grid-column-gap: 30px;
+   }
+   }
+   
+   
+   a:link {
+     color: red;
+     background-color: transparent;
+     text-decoration: none;
+   }
+   
+   a:visited {
+     color: red;
+     background-color: transparent;
+     text-decoration: none;
+   }
+   
+   a:hover {
+     color: red;
+     background-color: transparent;
+     text-decoration: underline;
+   }
+   
+   a:active {
+     color: red;
+     background-color: transparent;
+     text-decoration: underline;
+   }
+   
+   .songs{
+     display: grid;
+       grid-template-columns: auto auto;
+   }
+   
+   
+   
+   #quizContainer {
+     padding: 50px;
+     margin: 0 10px;
+     border: 1px solid black;
+     }
+     
+     #quizContainer h1 {
+         font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+         text-transform: uppercase;
+         text-align: center;
+     }
+     
+     #quizContainer .button {
+         width: 27%;
+         height: 50px;
+         padding-top: 15px;
+         border: 1px solid #666;
+         float:left;
+         margin-left:10px;
+         text-align: center;
+         font-family: "Helvetica",sans-serif;
+         text-transform: uppercase
+     }
+     
+     #quiz ul {
+         padding:0;
+     }
+     
+     #quiz li {
+             font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+         font-size: 1.5em;
+         width: 45%;
+         height: 100px;
+         text-align: center;
+         list-style: none;
+         float: left;
+         background-color: #ededed;
+         margin-bottom:10px;
+         padding-top: 30px;
+     }
+     
+     
+     a .button:hover  {
+         background-color: coral;
+         color: white;
+     }
+     
+     .container h2 {
+             font-family: "GrotzecCond-Demibold", "Helvetica", sans-serif;
+         font-size:2em;
+         text-transform: uppercase;
+         text-align: center;
+         
+     }
+     
+     .songwrapper {
+         display: grid;
+         grid-template-columns: auto auto;
+         grid-column-gap: 10px;
+     }
+     
+     .song p {
+         font-style: italic;
+         color: #666;
+         line-height: 100%;
+         
+     }
+     
+     .container a:link {color:firebrick};
+     
+     .container a:hover{text-decoration: underline}
